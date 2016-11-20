@@ -8,7 +8,7 @@ RUN apt-get update
 RUN apt-get install --no-install-recommends -y build-essential curl wget
 
 # Node.js
-RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_7.x | bash -
 RUN apt-get install -y nodejs
 
 # Yarn
