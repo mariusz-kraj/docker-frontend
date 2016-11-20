@@ -9,7 +9,7 @@ RUN apt-get install --no-install-recommends -y build-essential curl wget
 
 # Node.js
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
-RUN apt-get install -y nodejs
+RUN apt-get install -y nodejs npm
 
 # Yarn
 RUN wget --no-check-certificate --quiet -O - https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
