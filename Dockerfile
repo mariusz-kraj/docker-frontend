@@ -11,6 +11,9 @@ RUN apt-get install --no-install-recommends -y build-essential curl wget
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
 RUN apt-get install -y nodejs npm
 
+# Symlink
+RUN ln -s /usr/bin/nodejs /usr/bin/node
+
 # Yarn
 RUN wget --no-check-certificate --quiet -O - https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
 RUN echo "deb http://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
